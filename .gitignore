@@ -1,7 +1,11 @@
 #################
 ## Eclipse
 #################
-
+#this project
+Servers
+RemoteSystemTempFiles
+target/
+#
 *.pydevproject
 .project
 .metadata
