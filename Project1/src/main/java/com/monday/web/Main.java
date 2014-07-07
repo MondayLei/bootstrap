@@ -4,7 +4,7 @@ import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
-import com.monday.web.object.Greeting;
+import com.monday.web.model.Greeting;
 
 public class Main {
 	public static void main(String[] args) {

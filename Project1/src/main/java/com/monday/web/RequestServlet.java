@@ -18,6 +18,6 @@ public class RequestServlet extends HttpServlet {
 
 		PrintWriter writer = response.getWriter();
 
-		writer.println("Hello World!");
+		writer.println("Hello World! Welcome Monday!");
 	}
 }

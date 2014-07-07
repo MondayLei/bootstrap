@@ -1,4 +1,4 @@
-package com.monday.web.object;
+package com.monday.web.model;
 
 public class Greeting {
 
