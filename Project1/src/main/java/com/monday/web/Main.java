@@ -11,7 +11,7 @@ public class Main {
 		// ClassPathXmlApplicationContext:classpath
 		// FileSystemXmlApplicationContext:working directory path
 		ApplicationContext context = new FileSystemXmlApplicationContext(
-				"src/main/resources/configSpring.xml");
+				"src/main/resources/config/configSpring.xml");
 		BeanFactory factory = (BeanFactory) context;
 		Greeting test = (Greeting) factory.getBean("helloBean");
 		test.print();

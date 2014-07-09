@@ -10,14 +10,13 @@
 	</welcome-file-list>
 
 	<!-- Create the Spring Application Context on startup -->
-	<!-- <listener> -->
+	<listener>
 		<!-- this loads WEB-INF/applicationContext.xml by default -->
-		<!-- <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-	</listener> -->
-
-	<!-- <listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<listener>
 		<listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
-	</listener> -->
+	</listener>
 
 	<servlet>
 		<servlet-name>helloservlet</servlet-name>

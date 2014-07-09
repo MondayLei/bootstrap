@@ -13,7 +13,7 @@ public class Greeting {
 		this.content = content;
 	}
 
-	public long getId() {
+	public int getId() {
 		return id;
 	}
 
