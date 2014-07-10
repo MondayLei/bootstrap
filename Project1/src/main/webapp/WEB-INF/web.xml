@@ -9,7 +9,13 @@
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 
-	<!-- Create the Spring Application Context on startup -->
+<!-- 可以在web.xml里用 <context-param><param-name>contextConfigLocation</param-name><param-value>文件名逗号隔开</param-value></context-param>配置
+ -->
+	 <context-param>
+	    <param-name>contextConfigLocation</param-name>
+	    <param-value>classpath:config/applicationContext.xml</param-value>
+	</context-param>
+ 	<!-- Create the Spring Application Context on startup -->
 	<listener>
 		<!-- this loads WEB-INF/applicationContext.xml by default -->
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
