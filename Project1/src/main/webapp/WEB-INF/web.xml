@@ -9,9 +9,8 @@
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 
-<!-- 可以在web.xml里用 <context-param><param-name>contextConfigLocation</param-name><param-value>文件名逗号隔开</param-value></context-param>配置
- -->
-	 <context-param>
+	<!-- Change applicationContext.xml default directory -->
+	<context-param>
 	    <param-name>contextConfigLocation</param-name>
 	    <param-value>classpath:config/applicationContext.xml</param-value>
 	</context-param>
@@ -28,9 +27,9 @@
 		<servlet-name>helloservlet</servlet-name>
 		<servlet-class>com.monday.web.RequestServlet</servlet-class>
 	</servlet>
-	<servlet>
+	<!-- <servlet>
 		<servlet-name>spring</servlet-name>
-        <!-- this loads WEB-INF/spring-servlet.xml by default -->
+        this loads WEB-INF/spring-servlet.xml by default
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
@@ -38,7 +37,7 @@
 	<servlet-mapping>
 		<servlet-name>spring</servlet-name>
 		<url-pattern>/test</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
 	<servlet-mapping>
 		<servlet-name>helloservlet</servlet-name>
 		<url-pattern>/tt</url-pattern>

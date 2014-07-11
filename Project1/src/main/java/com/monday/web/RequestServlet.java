@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 import com.monday.web.model.Greeting;
@@ -24,8 +25,8 @@ public class RequestServlet extends HttpServlet {
 		PrintWriter writer = response.getWriter();
 
 		writer.println("Hello World! Welcome Monday!");
-		ApplicationContext context = new FileSystemXmlApplicationContext(
-				"src/main/resources/config/applicationContext.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext(
+				"config/applicationContext.xml");
 		Greeting greeting = (Greeting) context.getBean("helloBean");
 		writer.println(greeting.getId());
 	}
